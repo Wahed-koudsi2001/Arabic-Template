@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap");
+* {
+  direction: rtl;
+  text-align: right;
+}
+body {
+  font-family: "Tajawal", sans-serif;
+}
+
+/* Start landing */
+.landing {
+  background-image: url(../img/slide-bg-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+@media (max-width: 767px) {
+  .landing {
+    background-position: initial;
+  }
+}
+.landing .content {
+  padding-top: 180px;
+}
+@media (max-width: 767px) {
+  .landing .content {
+    width: 100% !important;
+  }
+}
+@media (max-width: 767px) {
+  .landing .content h1 {
+    font-size: 35px !important;
+  }
+}
+/* End landing */
+
+/* Start Info */
+.info h1 {
+  width: 160px;
+}
+/* End Info */
+
+/* Word */
+.work {
+  background-color: #f8f9fa;
+}
+.work .row > * {
+  padding-left: 0;
+  padding-right: 0;
+}
+.work .row div {
+  flex: 1 1 30%;
+}
+@media (max-width: 767px) {
+  .work .row .only {
+    flex: 1 1 100%;
+  }
+}
+.work .row .width {
+  width: 200px !important;
+}
+.btn {
+  width: fit-content;
+}
+/* Word */
+
+/* Start sub */
+.sub {
+  background-image: url(../img/subscribe-our-newsletter-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  position: relative;
+}
+.sub .container {
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 991px) {
+  .sub .container {
+    width: 100%;
+  }
+}
+.sub .container input {
+  border-radius: 10px;
+  border: none;
+}
+/* End sub */
+
+/* Start Team */
+@media (max-width: 991px){
+  .team .row .d-flex{
+  flex-direction: column;
+  gap: 40px 0;
+}
+}
+@media (max-width: 767px) {
+    .team .row .d-flex img{
+      display: none;
+  }
+  
+}
+
+/* End Team */
+
+/* Start Footer */
+footer {
+  background-color: #071c33;
+
+/* End Footer */
